@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WOWOROOM寢具</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/all.css">
 </head>
@@ -41,9 +41,7 @@
         <p class="bedAdvantage-text">好收納</p>
       </li>
       <li>
-        <img class="bedAdvantage-img"
-          src="./images/5n1uTFh.png"
-          alt="好組裝">
+        <img class="bedAdvantage-img" src="./images/5n1uTFh.png" alt="好組裝">
         <p class="bedAdvantage-text">好組裝</p>
       </li>
     </ul>
@@ -127,9 +125,7 @@
             </div>
           </li>
           <li class="recommendation-card">
-            <img
-              src="./images/3IATkJG.png"
-              alt="">
+            <img src="./images/3IATkJG.png" alt="">
             <div class="recommend-content">
               <div class="recommend-img">
                 <img src="./images/8WwZsLS.png" alt="">
@@ -186,9 +182,7 @@
             <img src="./images/mjA01Tk.png" alt="">
             <div class="recommend-content">
               <div class="recommend-img">
-                <img
-                  src="./images/8O1cOnG.png"
-                  alt="">
+                <img src="./images/8O1cOnG.png" alt="">
                 <div>
                   <p>江八角</p>
                   <p class="recommend-text">Charles 雙人床架</p>
@@ -227,9 +221,7 @@
             <img src="./images/kwIRna8.png" alt="">
             <div class="recommend-content">
               <div class="recommend-img">
-                <img
-                  src="./images/3ako6QX.png"
-                  alt="">
+                <img src="./images/3ako6QX.png" alt="">
                 <div>
                   <p>PeiQun</p>
                   <p class="recommend-text">Antony 雙人床架</p>
@@ -291,7 +283,7 @@
       <option value="窗簾">窗簾</option>
     </select>
     <ul class="productWrap">
-      <li class="productCard">
+      <!-- <li class="productCard">
         <h4 class="productType">新品</h4>
         <img
           src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/dp6gW6u5hkUxxCuNi8RjbfgufygamNzdVHWb15lHZTxqZQs0gdDunQBS7F6M3MdegcQmKfLLoxHGgV3kYunUF37DNn6coPH6NqzZwRfhbsmEblpJQLqXLg4yCqUwP3IE.png"
@@ -370,47 +362,36 @@
         <h3>Antony 雙人床架／雙人加大</h3>
         <del class="originPrice">NT$18,000</del>
         <p class="nowPrice">NT$12,000</p>
-      </li>
+      </li> -->
     </ul>
   </section>
   <section class="shoppingCart">
     <h3 class="section-title">我的購物車</h3>
     <div class="overflowWrap">
       <table class="shoppingCart-table">
-        <tr>
-          <th width="40%">品項</th>
-          <th width="15%">單價</th>
-          <th width="15%">數量</th>
-          <th width="15%">金額</th>
-          <th width="15%"></th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cardItem-title">
-              <img src="https://i.imgur.com/HvT3zlU.png" alt="">
-              <p>Antony 雙人床架／雙人加大</p>
-            </div>
-          </td>
-          <td>NT$12,000</td>
-          <td>1</td>
-          <td>NT$12,000</td>
-          <td class="discardBtn">
-            <a href="#" class="material-icons">
-              clear
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#" class="discardAllBtn">刪除所有品項</a>
-          </td>
-          <td></td>
-          <td></td>
-          <td>
-            <p>總金額</p>
-          </td>
-          <td>NT$13,980</td>
-        </tr>
+        <thead>
+          <tr>
+            <th width="40%">品項</th>
+            <th width="15%">單價</th>
+            <th width="15%">數量</th>
+            <th width="15%">金額</th>
+            <th width="15%"></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td>
+              <a href="#" class="discardAllBtn">刪除所有品項</a>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>總金額</p>
+            </td>
+            <td class="total">NT$13,980</td>
+          </tr>
+        </tfoot>
       </table>
     </div>
   </section>
@@ -453,11 +434,16 @@
             <option value="信用卡">信用卡</option>
             <option value="超商付款">超商付款</option>
           </select>
+          <p class="orderInfo-message" data-message="交易方式">必填</p>
         </div>
       </div>
       <input type="submit" value="送出預訂資料" class="orderInfo-btn">
     </form>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script src="./js/config.js"></script>
   <script src="./js/all.js"></script>
 </body>
 
